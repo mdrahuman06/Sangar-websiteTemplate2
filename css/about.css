@@ -1,30 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
 header {
-    background-color: #fff;
+    position: absolute;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    align-items: center;
+    padding: 20px 30px;
 }
 
 .logo {
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
 .logo img {
-    height: 50px;
-    margin-right: 10px;
+    height: 90px;
 }
 
 nav ul {
     list-style: none;
+    gap: 22px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,15 +44,88 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #fff;
 }
 
-main {
+.about-us {
+    margin-bottom: 40px;
+    background-image: url('../Image/about.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.about-text {
     padding: 20px;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('Image/about.png');
+    background-size: cover; */
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
 }
 
-.about,
+
+.about-p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.about-h1 {
+    padding: 20px;
+    font-size: 50px;
+}
+
+
+/* overview */
+.overviews{
+    background-color: #fff;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.overview-text {
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content:center;
+    gap: 70px;
+    align-items: center; 
+    color: #fff; 
+    padding: 20px; 
+}
+.overview-p{
+    color: #000;
+    font-size: 18px;
+}
+.overview-h1{
+    padding: 20px 0px;
+    color: #000;
+    font-size: 34px;
+}
+.overview-img{
+    width: 470px;
+    height: 320px;
+    border-radius: 6%;
+}
+
+
 .who-we-are,
 .services,
 .our-story {
@@ -52,21 +133,45 @@ main {
 }
 
 .services {
+    padding: 0px 140px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-radius: 6%;
 }
-
+.services-h3{
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    padding: 40px;
+}
+.services-h4{
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
 .service-item {
+    background-color: #fff;
     width: 30%;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-
+.services-p{
+    padding: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+}
 .service-item img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 50%;
+    border-radius: 6%;
 }
 
-footer {
+
+
+/* footer */
+
+/* footer {
     background-color: #f8f8f8;
     padding: 20px;
     display: flex;
@@ -104,4 +209,108 @@ footer {
 .footer-contact a {
     text-decoration: none;
     color: #333;
+} */
+/* footer */
+
+footer {
+    /* background: #efeeee; */
+    color: #333;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+.logo2 img{
+    width: 30%;
+    height: 200px;
+    display: block;
+    margin-bottom: -40px;
+    margin-left: -25px;
+    
+}
+.footer-contents{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps to next line if necessary */
+    justify-content: space-evenly; /* Distribute items evenly across the container */
+    align-items: center; /* Align items to the top of the container */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content > div {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.footer-content h4 {
+    color: blue;
+    /* font-size: 1.0em; */
+    margin-bottom: 20px;
+}
+.footer-p{
+    text-decoration: none;
+    color: #000;
+}
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.footer-content ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-p{
+    width: 50%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.footer-bottom ul {
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+    text-decoration: underline;
 }
