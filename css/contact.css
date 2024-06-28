@@ -13,16 +13,19 @@ body {
 
 header {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
     padding: 20px 30px;
+    z-index: 3;
 }
 
 .logo {
-    /* display: flex; */
+    display: flex;
     align-items: center;
 }
 
@@ -32,10 +35,10 @@ header {
 
 nav ul {
     list-style: none;
+    display: flex;
     gap: 22px;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 nav li {
@@ -47,26 +50,54 @@ nav a {
     color: #fff;
 }
 
-
-
-
-
 .contact {
-    text-align: center;
+    margin-bottom: 40px;
+    background-image: url('../Image/about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact h2 {
-    margin-bottom: 10px;
+.contact-text {
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 1;
+    color: #000;
+    position: relative;
 }
 
-.contact p {
-    margin-bottom: 20px;
+.contact-p {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #444;
+    text-align: start;
+}
+
+.contact-h1 {
+    padding: 10px 0px;
+    font-size: 25px;
+    text-align: start;
 }
 
 .contact form {
+    padding: 25px 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
 }
 
 .contact input {
@@ -74,26 +105,30 @@ nav a {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    background-color: #dedcdc;
     border-radius: 5px;
+    color: #000;
+    position: relative;
+    z-index: 2;
 }
 
 .contact button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #333;
+    background-color: blue;
     color: #fff;
     cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: #555;
+    position: relative;
+    z-index: 2;
+    align-self: flex-start;  /* Align button to the start */
 }
 
 .contact img {
     margin-top: 20px;
     width: 300px;
     height: auto;
+    border-radius: 10px;
 }
 
 
@@ -106,16 +141,21 @@ footer {
     padding: 30px 20px;
     font-size: 14px;
 }
-.logo2 img{
-    width: 30%;
-    height: 200px;
+.logo2 .imgs{
+    width: 40%;
+    height: 180px;
     display: block;
     margin-bottom: -40px;
-    margin-left: -25px;
+    margin-left: -40px;
     
+}
+
+.logo2 p{
+    padding: 10px 0px;
 }
 .footer-contents{
     width: 50%;
+    padding: 25px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -201,4 +241,21 @@ footer {
 
 .footer-bottom ul li a:hover {
     text-decoration: underline;
+}
+
+/* social-icons */
+
+.social-icon{
+    padding: 10px 0px;
+    /* background-color :aliceblue ; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.icons{
+    width: 17px;
+    height: 17px;
+    
 }

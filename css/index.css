@@ -47,6 +47,58 @@ nav a {
     color: #fff;
 }
 
+.home {
+    margin-bottom: 40px;
+    background-image: url('../Image/home.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.home-text {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('Image/about.png');
+    background-size: cover; */
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+
+.home-p {
+    font-size: 17px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.home-h1 {
+    padding: 20px;
+    font-size: 50px;
+}
+.home-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    /* position: relative; */
+    /* z-index: 2; */
+    /* align-self: flex-start;  */
+}
 
 
 
@@ -58,16 +110,21 @@ footer {
     padding: 30px 20px;
     font-size: 14px;
 }
-.logo2 img{
-    width: 30%;
-    height: 200px;
+.logo2 .imgs{
+    width: 40%;
+    height: 180px;
     display: block;
     margin-bottom: -40px;
-    margin-left: -25px;
+    margin-left: -40px;
     
+}
+
+.logo2 p{
+    padding: 10px 0px;
 }
 .footer-contents{
     width: 50%;
+    padding: 25px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -153,4 +210,21 @@ footer {
 
 .footer-bottom ul li a:hover {
     text-decoration: underline;
+}
+
+/* social-icons */
+
+.social-icon{
+    padding: 10px 0px;
+    /* background-color :aliceblue ; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.icons{
+    width: 17px;
+    height: 17px;
+    
 }
