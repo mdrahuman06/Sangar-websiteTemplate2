@@ -127,12 +127,14 @@ nav a {
 
 
 .who-we-are,
-.services,
 .our-story {
     margin-bottom: 40px;
 }
 
+/* services */
+
 .services {
+    margin-bottom: 40px;
     padding: 0px 140px;
     display: flex;
     justify-content: space-evenly;

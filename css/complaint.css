@@ -130,6 +130,53 @@ nav a {
     border-radius: 6%;
 }
 
+/* services */
+
+.service{
+    background-color: #e5cffa;
+    height: 650px;
+}
+.services {
+    margin-bottom: 40px;
+    padding: 0px 140px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.services-h3{
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    padding: 40px;
+}
+.services-h4{
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+.service-item {
+    border-radius: 15px;
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.services-p{
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.service-item img {
+    width: 90%;
+    height: 50%;
+    border-radius: 6%;
+}
+
+
+
+
 
 /* footer */
 
