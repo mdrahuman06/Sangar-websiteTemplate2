@@ -154,9 +154,10 @@ nav a {
 }
 .service-item {
     background-color: #fff;
+    border-radius: 15px;
     width: 30%;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .services-p{
     padding: 20px;
